@@ -57,7 +57,7 @@ int main()
 
     float media = total/valorcentral;
 
-    printf("\n\na Soma deu um total de : %f",total);
+    printf("\n\na Soma deu um total de : %.2f",total);
 
     printf("\nMedia de valores: %.2f",media);
 
