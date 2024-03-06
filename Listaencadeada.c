@@ -77,6 +77,40 @@ void inserir_no_final(No **lista,int num) {
 
 }
 
+void inserir_ordenado(No **lista,int num) {
+ No *aux, *novo = malloc(sizeof(No));
+
+
+ if (novo){
+    novo->valor = num;
+    if (*lista == NULL) {
+        novo->proximo = *lista;
+        *lista = novo;
+
+    }
+    else if(novo->valor < (*lista)->valor){
+        novo->proximo = *lista;
+        *lista = novo;
+        
+        
+    }
+    else {
+        aux = *lista;
+        while(aux->proximo && novo->valor > aux->proximo->valor){
+            aux = aux->proximo;
+          }
+
+        novo->proximo = aux->proximo;
+        aux->proximo = novo;
+    }
+
+ }
+ else{
+    printf("Erro de alocar memoria ");
+ }
+
+
+}
 
 void imprimir(No *no){
     printf("\n\tLista: ");
@@ -114,7 +148,7 @@ int main()
 
     do{
     wait(2000);
-    printf("\n\t     Menu\n0 - Sair\n1 - Inserir\n2 - InserirF\n3 - InserirM\n4 - Imprimir\n5 - Limpar console\n\n");
+    printf("\n\t     Menu\n0 - Sair\n1 - Inserir\n2 - InserirF\n3 - InserirM\n4 - Imprimir\n5 - Inserir Ordenado\n6 - Limpar console\n\n");
     scanf("%d", &opcao);
 
     switch(opcao) {
@@ -141,8 +175,14 @@ int main()
         printf("\nImprimindo \n\n");
         imprimir(lista);
         break;
-
+    
     case 5:
+        printf("\nInsira o valor que deseja inserir: ");
+        scanf("%d",&valor);
+        inserir_ordenado(&lista,valor);
+        break;
+
+    case 6:
         printf("\nLimpando \n\n");
         wait(2000);
         clearConsole();
