@@ -1,7 +1,3 @@
-Claro! Vou incluir alguns emojis e ajustar o texto para que fique mais visualmente atraente e agradável para seu portfólio no GitHub:
-
----
-
 ### 🚀 A Jornada de Programação: De C a C++
 
 A história das linguagens de programação começou a evoluir de forma marcante a partir dos anos 1970, com a criação da **linguagem C** por **Dennis Ritchie** na AT&T Bell Labs. A ideia era criar uma linguagem simples, eficiente e poderosa para o desenvolvimento de sistemas operacionais, e com isso, nasceu o icônico **Unix**. 🖥️
