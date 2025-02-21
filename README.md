@@ -17,5 +17,3 @@ O C, por ser uma linguagem de baixo nível, me ajudou a entender como o software
 Esses exercícios ajudaram a moldar minha forma de pensar e me deram a base necessária para evoluir e transitar por diferentes áreas da programação. Cada desafio superado me fez entender melhor como construir soluções eficientes e de alto desempenho. ⚡
 
 ---
-
-Esse formato com emojis fica mais interativo, visual e adequado para um portfólio no GitHub, mantendo o conteúdo claro e ao mesmo tempo interessante.
